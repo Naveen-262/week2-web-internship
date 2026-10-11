@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean, responsive portfolio website created for a web application internship task.">
+  <title>Nagaraju | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">Nagaraju<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li><li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">WEB APPLICATION INTERNSHIP PROJECT</p>
+        <h1>Hi, I'm <span>Nagaraju</span>.<br>I'm learning to build for the web.</h1>
+        <p class="lead">I enjoy turning ideas into clear, useful, and responsive web experiences with HTML, CSS, and JavaScript.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#services">Explore my skills</a>
+          <button class="button button-outline" id="helloButton" type="button">Say hello</button>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span> Learning • Building • Improving</div>
+      </div>
+      <div class="hero-art">
+        <img src="images/hero-illustration.svg" alt="Illustration of a laptop displaying a web page">
+        <div class="floating-card"><span>✦</span><div><strong>Curious mind</strong><small>Always learning</small></div></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Building skills, <span>one project at a time.</span></h2></div>
+        <div class="about-grid">
+          <div class="about-badge"><img src="images/profile-avatar.svg" alt="Simple profile avatar illustration"></div>
+          <div class="about-copy">
+            <h3>Hello, and welcome!</h3>
+            <p>I'm Nagaraju, an aspiring web developer who is learning how websites are structured, styled, and made interactive. This project is created as part of a web application internship task.</p>
+            <p>My goal is to practise the fundamentals, write readable code, and build websites that work well on phones, tablets, and computers.</p>
+            <ul class="check-list"><li>Semantic HTML structure</li><li>Responsive CSS layouts</li><li>Interactive JavaScript features</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading centered"><p class="eyebrow">WHAT I'M PRACTISING</p><h2>My <span>focus areas</span></h2><p>Core building blocks for a modern website.</p></div>
+        <div class="cards-grid">
+          <article class="service-card"><div class="card-icon icon-blue">&lt;/&gt;</div><h3>HTML Development</h3><p>Organising content with semantic elements, headings, links, lists, images, and accessible forms.</p><a href="#skills" class="text-link">Explore skills ↗</a></article>
+          <article class="service-card"><div class="card-icon icon-purple">✳</div><h3>CSS Styling</h3><p>Creating clear visual hierarchy with colour, spacing, Flexbox, Grid, hover states, and responsive rules.</p><a href="#skills" class="text-link">Explore skills ↗</a></article>
+          <article class="service-card"><div class="card-icon icon-orange">⚡</div><h3>JavaScript</h3><p>Adding button interactions, validating form input, and making the mobile navigation usable.</p><a href="#contact" class="text-link">Try the form ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container skills-layout">
+        <div><p class="eyebrow">TECHNICAL TOOLKIT</p><h2>Skills I'm <span>developing</span></h2><p class="muted">These labels describe my current learning focus, not professional proficiency ratings.</p></div>
+        <div class="skill-list">
+          <div class="skill-row"><div><strong>HTML5</strong><span>Page structure</span></div><div class="skill-track"><div class="skill-fill fill-html"></div></div></div>
+          <div class="skill-row"><div><strong>CSS3</strong><span>Visual design</span></div><div class="skill-track"><div class="skill-fill fill-css"></div></div></div>
+          <div class="skill-row"><div><strong>JavaScript</strong><span>Interactions</span></div><div class="skill-track"><div class="skill-fill fill-js"></div></div></div>
+          <div class="skill-row"><div><strong>Responsive design</strong><span>Multi-screen layouts</span></div><div class="skill-track"><div class="skill-fill fill-responsive"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading centered"><p class="eyebrow">LET'S CONNECT</p><h2>Send me a <span>message</span></h2><p>This demo form validates your input in the browser. It does not send email to a server.</p></div>
+        <div class="contact-layout">
+          <aside class="contact-panel"><div class="contact-symbol">✉</div><h3>Have an idea?</h3><p>Use the form to test the JavaScript validation. Replace the sample contact details with your own before submitting the project.</p><div class="contact-item"><span>⌖</span><div><small>Project</small><strong>Web Application Internship</strong></div></div><div class="contact-item"><span>⌘</span><div><small>Technologies</small><strong>HTML · CSS · JavaScript</strong></div></div></aside>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row"><div class="form-field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Nagaraju" autocomplete="name" required></div><div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div></div>
+            <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea></div>
+            <button class="button button-primary submit-button" type="submit">Validate message <span>→</span></button>
+            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="closing-cta"><div class="container closing-inner"><div><p class="eyebrow">NEXT STEP</p><h2>Keep learning. Keep building.</h2><p>Small projects are a practical way to improve every day.</p></div><a href="#home" class="button button-light">Back to top ↑</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="logo footer-logo" href="#home">Nagaraju<span>.</span></a><p>Created for the Week 2 Web Application Internship Task.</p><p>© <span id="currentYear">2026</span> Nagaraju. Learning project.</p></div></footer>
+</body>
+</html>
